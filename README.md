@@ -54,14 +54,3 @@ bind = $mainMod ALT, 3, exec, /path/to/HyprWSwapper/swap_workspaces.sh 3
 bind = $mainMod ALT, 4, exec, /path/to/HyprWSwapper/swap_workspaces.sh 4
 bind = $mainMod ALT, 5, exec, /path/to/HyprWSwapper/swap_workspaces.sh 5
 ```
-
-## How it works
-
-1.  **Validation:** Checks if a target workspace argument is provided.
-2.  **Identification:** Gets the current active workspace ID.
-3.  **Data Retrieval:** Fetches all open clients using `hyprctl clients -j`.
-4.  **Batch Preparation:**
-    * Filters clients on the **Current** workspace and queues a move to **Target**.
-    * Filters clients on the **Target** workspace and queues a move to **Current**.
-    * Queues a focus switch to the **Target** workspace.
-5.  **Execution:** Executes all queued commands in a single batch via `hyprctl --batch` for atomic performance.

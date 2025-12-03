@@ -21,15 +21,15 @@ sudo pacman -S jq libnotify
 ## Installation
 
 1.  Clone this repository:
-    ```bash
-    git clone https://github.com/xabierprg/HyprWSwapper.git
-    cd HyprWSwapper
-    ```
+```bash
+git clone https://github.com/xabierprg/HyprWSwapper.git
+cd HyprWSwapper
+```
 
 2.  Make the script executable:
-    ```bash
-    chmod +x swap_workspaces.sh
-    ```
+```bash
+chmod +x swap_workspaces.sh
+```
 
 ## Usage
 

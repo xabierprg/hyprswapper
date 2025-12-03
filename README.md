@@ -1,8 +1,8 @@
 # HyprSwapper
 
-A lightweight Bash script for Hyprland that swaps all windows (clients) between the current workspace and a specified target workspace.
+A lightweight bash script for Hyprland that swaps all windows (clients) between the current workspace and a specified target workspace.
 
-It utilizes `hyprctl --batch` to ensure the operation happens almost instantaneously, moving windows silently to minimize visual clutter during the swap.
+It uses `hyprctl --batch` to ensure the operation happens almost instantaneously, moving windows silently to minimize visual clutter during the swap.
 
 ## Dependencies
 
